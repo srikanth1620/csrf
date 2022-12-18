@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.com" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    Hello Ganesha!!;
+    <br>
+    <form action="/save" method="post" >
+        <input name="uname"/><br>
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+        <input type="submit" value="saver record"/>
+    </form>
+</body>
+</html>
